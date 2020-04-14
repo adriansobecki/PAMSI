@@ -25,7 +25,7 @@ int quick(T* data, int l, int m, int r)
 {
     int i = l+1;
     int k = r;
-    int pivot = data[m];
+    T pivot = data[m];
     change(data, l, m);
     while (1)
     {
@@ -55,7 +55,7 @@ int quick(T* data, int l, int m, int r)
 template<typename T>
 void change(T* data, int i, int k)
 {
-    int q;
+    T q;
     q = data[i];
     data[i] = data[k];
     data[k] = q;
