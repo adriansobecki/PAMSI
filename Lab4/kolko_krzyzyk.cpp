@@ -40,6 +40,8 @@ bool kolko_krzyzyk::ruch(char znak)
         std::cin.clear();
         std::cin.ignore();
     }
+    if (index >= rozmiar_planszy * rozmiar_planszy)
+        return false;
     if (plansza[index] == ' ')
     {
         plansza[index] = znak;
